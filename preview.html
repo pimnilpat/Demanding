@@ -37,6 +37,13 @@
 			$("#image-name").html(model);
 			$("#image-source").attr("src","images/dedicate_to_tavorn/"+image);
 
+			if(model=="Model 201")
+			{
+                 var contents = "";
+                 contents = "ต้องขอโทษน้องสาวของผู้ชายด้วยค่ะ ที่ส่งข้อความหา เนื่องจากต้องการติดต่อกับฝ่ายชายให้ออกมายอมรับผิด แต่ไม่สามารถติดต่อได้เลย พยายามแทบทุกอย่างที่จะให้เขามาคุยก้วย มาขอโทษ มายอมรับผิด ให้เขาสำนึก";
+                 $("#captions").html(contents);
+			}
+
 	  	});
 	  </script>
 
@@ -121,10 +128,15 @@
 					<h2 id="image-name">Demanding Collections</h2>	
 				    <div>
 				    	<img id="image-source" src="" />
-				    </div>
-				    <div>
-				    	<h3>Caption<h3>
-				    </div>
+				    </div>				    
+                </div>
+
+                <div class="col-md-12">					
+				    <h3>Caption</h3>
+				    <p id="captions">
+				        <!-- content of caption -->
+				    </p>
+				    
                 </div>
 				
 			</div> <!-- thumbnail area -->  
